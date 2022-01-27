@@ -1,0 +1,362 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+:root{
+     --primary-color: #333333; 
+	 --secondary-color: #ffff4d;
+	 --tertiary-color: whitesmoke;
+}
+
+.light-theme{
+	--primary-color: whitesmoke;
+	--secondary-color: rgb(27, 82, 233);
+	--tertiary-color: #333333;
+}
+
+/*----------bootstrap-navbar-css------------*/
+a{
+	text-decoration: none;
+}
+
+ body{
+	background-color:var(--primary-color);
+} 
+
+div.home{
+	display: grid;
+	justify-content: center;
+	height: 100vh;
+}
+
+div.nav{
+	/* box-shadow: 5px 5px 10px rgba(235, 223, 223, 0.2); */
+	position: sticky;
+	height: 10vh;
+	width: 70vw;
+	top: 10;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 8vh;
+	background-color: var(--primary-color);
+	font-family: 'Dancing Script', cursive;
+	border: 2px solid var(--tertiary-color);
+	border-radius: 10px;
+	padding: 15px;
+	box-shadow:var(--tertiary-color);
+}
+
+.logo{
+	color: var(--tertiary-color);
+	text-decoration: none;
+	font-size: 40px;
+} 
+
+.nav-links{
+   display: flex;
+   justify-content: space-around;
+   width: 30%;
+}
+
+.nav-links li{
+	list-style: none;
+}
+
+.nav-links a{
+	color: var(--tertiary-color);
+	text-decoration: none;
+	font-size: 25px;
+}
+
+ul li{
+	cursor: pointer;
+	position: relative;
+	text-align: center;
+}
+
+li.active a{
+	color: var(--secondary-color);
+}
+
+li.active::after{
+   position: absolute;
+   content: "";
+   height: 3px;
+   width: 100%;
+   background-color: var(--secondary-color);
+   left: 0;
+   bottom: -7px;
+   border-top-left-radius: 2px;
+   border-bottom-left-radius: 2px;
+   animation: appear 0.5s linear;
+}
+
+@keyframes appear{
+	from{
+		width:0;
+	}
+	to{
+		width: 100%;
+	}
+}
+
+/* home styles */
+
+div.main{
+	margin-top: 23px;
+	display: flex;
+	height: 80vh;
+	border: 2px solid var(--tertiary-color);
+	border-radius: 10px;
+	font-family: 'Dancing Script', cursive;
+	justify-content: space-around;
+	padding: 30px;
+	width: 70vw;
+}
+
+div.main-text{
+	display: flex;
+    /* background-color: red; */
+	width: 45vw;
+	border-radius: 10px;
+	justify-content: center;
+	flex-direction: column;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+
+/* div.main-img{
+    margin-bottom: 50px;
+} */
+
+div.main-img img{
+	height: 350px;
+    width: 330px;
+    border-radius: 50%;
+    padding-left: 30;
+	margin-top: 50;
+	margin-right: 10px;
+}
+
+.catchyheading{
+    font-size: 80px;
+	color: var(--tertiary-color);
+}
+
+.desc{
+	margin: 0;
+    font-size: 30;
+    box-sizing: border-box;
+    color: var(--secondary-color);
+    padding-top: 20;
+    padding-bottom: 50;
+}
+
+.buttons button{
+	box-shadow: 5px 5px 10px rgba(245, 239, 239, 0.2);
+	padding: 10px;
+    border-radius: 10;
+    margin-right: 90;
+    border-radius: 10px;
+    font-family: 'Dancing Script';
+    font-size: 20;
+    border: 2px var(--primary-color) solid;
+}
+
+div.contacts{
+	justify-content: center;
+    display: flex;
+    font-family: 'Dancing Script', cursive;
+    color: var(--tertiary-color);
+    margin-right: 40px;
+}
+
+div.contacts a{
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-right: 1;
+    margin-left: 10;
+	text-decoration: none;
+	color: var(--tertiary-color);
+}
+
+/* my hobbies css */
+div.mainH{
+	padding-top: 40px;
+    width: 350vw;
+}
+
+div.Myhobbies-heading{
+	height: 10vh;
+    font-size: 30px;
+    padding-left: 420px;
+    color: var(--tertiary-color);
+}
+
+div.Myhobbies-content{
+	text-decoration: none;
+	font-size: 25px;
+	justify-content: space-around;
+}
+
+#Hobbies{
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+	height: 30vw;
+	padding-top: 50px;
+	color: var(--secondary-color);
+}
+
+
+span{
+	color: var(--tertiary-color);
+}
+
+div.badminton ul{
+	list-style: none;
+}
+
+div.badminton li.icon{
+     padding-bottom: 10px;
+}
+
+div.reading li.icon{
+	padding-bottom: 10px;
+}
+
+div.reading ul{
+	list-style: none;
+}
+
+div.listening li.icon{
+	padding-bottom: 10px;
+}
+
+div.listening ul{
+	list-style: none;
+}
+
+div.gyming li.icon{
+	padding-bottom: 10px;
+}
+
+div.gyming ul{
+	list-style: none;
+}
+
+/* skills styles */
+
+div.skillsbar{
+	position: relative;
+	top: 5px;
+	bottom: 70px;
+	display: block;
+	height: 500px;
+	width: 700px;
+	padding: 10px;
+}
+
+div.bar{
+	margin: 50px;
+}
+
+div.html-progress{
+	color: var(--tertiary-color);
+	font-size: 30px;
+}
+
+div.css-progress{
+	color: var(--tertiary-color);
+	font-size: 30px;
+}
+
+div.javascript-progress{
+	color: var(--tertiary-color);
+	font-size: 30px;
+}
+
+div.progress-line-html{
+	position: relative;
+    background-color: var(--tertiary-color);
+	border-radius: 10px;
+	height: 20px;
+	width: 300px;
+	margin-top: 20px;
+}
+
+div.progress-line-css{
+	position: relative;
+    background-color: var(--tertiary-color);
+	border-radius: 10px;
+	height: 20px;
+	width: 300px;
+	margin-top: 20px;
+}
+
+div.progress-line-javascript{
+	position: relative;
+    background-color: var(--tertiary-color);
+	border-radius: 10px;
+	height: 20px;
+	width: 300px;
+	margin-top: 20px;
+}
+
+div.child-progress-line-html{
+	position: absolute;
+	background-color: var(--secondary-color);
+	border-radius: 10px;
+	height: 20px;
+	width: 180px;
+}
+
+div.child-progress-line-css{
+	position: absolute;
+	background-color: var(--secondary-color);
+	border-radius: 10px;
+	height: 20px;
+	width: 100px;
+}
+
+div.child-progress-line-javascript{
+	position: absolute;
+	background-color: var(--secondary-color);
+	border-radius: 10px;
+	height: 20px;
+	width: 150px;
+}
+
+
+#themeicon1{
+	background-color: var(--tertiary-color);
+	height: 20px;
+	width: 20px;
+	margin-left: 10px;
+}
+
+#themeicon2{
+	background-color: var(--tertiary-color);
+	height: 20px;
+	width: 20px;
+	margin-left: 10px;
+}
+
+#themeicon3{
+	background-color: var(--tertiary-color);
+	height: 20px;
+	width: 20px;
+	margin-left: 10px;
+}
+
+#themeicondiv{
+	display: flex;
+	justify-content: space-around;
+	margin-right: 10vw;
+	margin-left: 5vw;;
+	height: 10px;
+	width: 10px;
+}
