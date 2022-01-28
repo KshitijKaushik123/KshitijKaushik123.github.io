@@ -9,3 +9,4 @@ if(document.body.classList.contains("light-theme")){
     icon.src = "./assets/moon.png";
 }
 }
+ 

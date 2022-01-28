@@ -279,7 +279,7 @@ div.javascript-progress{
 	font-size: 30px;
 }
 
-div.progress-line-html{
+.progress-line-html{
 	position: relative;
     background-color: var(--tertiary-color);
 	border-radius: 10px;
@@ -288,7 +288,7 @@ div.progress-line-html{
 	margin-top: 20px;
 }
 
-div.progress-line-css{
+.progress-line-css{
 	position: relative;
     background-color: var(--tertiary-color);
 	border-radius: 10px;
@@ -297,7 +297,7 @@ div.progress-line-css{
 	margin-top: 20px;
 }
 
-div.progress-line-javascript{
+.progress-line-javascript{
 	position: relative;
     background-color: var(--tertiary-color);
 	border-radius: 10px;
@@ -306,30 +306,47 @@ div.progress-line-javascript{
 	margin-top: 20px;
 }
 
-div.child-progress-line-html{
+.progress-line-html .child-progress-line-html{
 	position: absolute;
+	color: var(--tertiary-color);
 	background-color: var(--secondary-color);
 	border-radius: 10px;
-	height: 20px;
-	width: 180px;
+	height: 100%;
+	animation: progresslineanimation1 3s forwards;
 }
 
-div.child-progress-line-css{
+.progress-line-css .child-progress-line-css{
 	position: absolute;
+	color: var(--tertiary-color);
 	background-color: var(--secondary-color);
 	border-radius: 10px;
-	height: 20px;
-	width: 100px;
+	height: 100%;
+	animation: progresslineanimation2 3s forwards;
 }
 
-div.child-progress-line-javascript{
+.progress-line-javascript .child-progress-line-javascript{
 	position: absolute;
+	color: var(--tertiary-color);
 	background-color: var(--secondary-color);
 	border-radius: 10px;
-	height: 20px;
-	width: 150px;
+	height: 100%;
+	animation: progresslineanimation3 3s forwards;
 }
 
+@keyframes progresslineanimation1 {
+	from {width: 0%;}
+	to {width: 40%;}
+}
+
+@keyframes progresslineanimation2 {
+	from {width: 0%;}
+	to {width: 30%;}
+}
+
+@keyframes progresslineanimation3 {
+	from {width: 0%;}
+	to {width: 30%;}
+}
 
 #themeicon1{
 	background-color: var(--tertiary-color);
